@@ -1,0 +1,118 @@
+<!-- //use flex.parent
+use flex.child
+or <divs> instead of <tr>// -->
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta name="description" content="Jazz Calculator"/>
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  	<title>The calculator</title>
+  </head>
+  <body>
+
+    <div class="main-container">
+
+      <div class="header">
+          <div id="name">
+            <p>Radio Jazz Calculator</p>
+            </div>
+            <div id="picture">
+              <img src="images/jazz2.jpg" alt="">
+          </div>
+      </div>
+
+      <div class="calcfield">
+
+        <div id="radio">
+          <audio controls>
+            <source src="images/song.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+      <form name="calc">
+        <div class="calculator">
+        <div id="result">
+            <input type="textfield" name="result" id="value">
+          </div>
+      <div class="buttons">
+        <div class="Row">
+        <!-- reach inside the "calc" form and reach inside the text field -input type box, and change to the value. -->
+        <!-- we use eval function from JS -->
+        <input type="button" name "equal" class="FirstRow" value="=" onclick="calc.result.value=eval(calc.result.value)">
+        <input type="button" name "plus" class="FirstRow" value="+" onclick="calc.result.value+='+'">
+        <input type="button" name='minus' class='FistRow' value="-" onclick="calc.result.value+='-'">
+        <input type="button" name='div' class='FirstRow' value="/" onclick="calc.result.value+='/'">
+      </div>
+      <div class="Row">
+        <input type="button" name='one' class='SecondRow' value="1" onclick="calc.result.value+='1'">
+        <input type="button" name='two' class='SecondRow' value="2" onclick="calc.result.value+='2'">
+        <input type="button" name='three' class='SecondRow' value="3" onclick="calc.result.value+='3'">
+        <input type="button" name='multiply' class='SecondRow' value="*" onclick="calc.result.value+='*'">
+      </div>
+      <div class="Row">
+        <input type="button" name='four' class='ThirdRow' value="4" onclick="calc.result.value+='4'">
+        <input type="button" name='five' class='ThirdRow' value="5" onclick="calc.result.value+='5'">
+        <input type="button" name='six' class='ThirdRow' value="6" onclick="calc.result.value+='6'">
+        <input type="reset" name="Clear" class="ThirdRow" value="Reset" onclick="calc.result.value=''">
+      </div>
+      <div class="Row">
+        <input type="button" name='seven' class='ForthRow' value="7" onclick="calc.result.value+='7'">
+        <input type="button" name='eight' class='ForthRow' value="8" onclick="calc.result.value+='8'">
+        <input type="button" name='nine' class='ForthRow' value="9" onclick="calc.result.value+='9'">
+        <input type="button" name='zero' class='ForthRow' value="0" onclick="calc.result.value+='0'">
+      </div>
+    </div>
+  </div>
+<!-- <input type="button" value="AVG" onclick="..."> -->
+</form>
+</div>
+<script></script>
+</body>
+</html>
+
+<!-- <script type="text/javascript">
+  var a;
+  var b;
+  function sum(){
+      setValues();
+    var z = a+b;
+    window.alert(z);
+  }
+  function div(){
+      setValues();
+    var h = a/b;
+    window.alert(h);
+  }
+    function subt(){
+      setValues();
+    var j = a-b;
+    window.alert(j);
+  }
+    function setValues(){
+  a = Number(document.getElementById('a').value);
+  b = Number(document.getElementById('b').value);
+}
+</script>
+</body>
+</html> -->
+
+<!--
+<form name ="calc">
+<table border= 4>
+  <tr>
+    <input type="text" name="input" size="400">
+  </tr>
+  <tr>
+    <input type="button" name="one" value=" 1 " Onclick="Calc.Input.value +='1'">
+    <input type="button" name="one" value=" 2 " Onclick="Calc.Input.value +='2'">
+  </tr>
+<tr>
+<input type="button" name="plus" value=" + " Onclick="Calc.Input.value += ' + '">
+<input type="button" name="AC" value="=" Onclick="">
+</tr>
+</table>
+</form>
+</body>
+</html> -->
